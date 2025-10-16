@@ -1,6 +1,6 @@
 :root {
     --groen: #347172;
-    --oranje: #D09482;
+    --oranje: #a63716;
     --donkergroen: #1B4243;
 
     --animationSpeed: 20s;
@@ -23,6 +23,15 @@ body {
     background: #FAF9F6;
     /* padding: 0 15px; */
 }
+
+.hideondesktop {
+    display: block;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
 
 .hero {
     background-image: url("../assets/hero-bg.jpg");
@@ -78,6 +87,12 @@ p {
     font-weight: 300;
 }
 
+b,
+strong {
+    font-weight: bold;
+}
+
+
 .subtitle {
     border: 1px solid var(--oranje);
     display: inline-block;
@@ -127,7 +142,12 @@ header {
 
 }
 
-
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+}
 
 
 .featured-half,
@@ -212,7 +232,13 @@ header {
 #close-icon {
     text-align: right;
     padding-right: 15px;
-    margin-top: -10px;
+    margin-top: -5px;
+}
+
+#close-icon,
+#hamburger-icon {
+    cursor: pointer;
+    line-height: 0;
 }
 
 
@@ -381,71 +407,29 @@ header {
     right: 5%;
 }
 
-div.accordion {
+.ft-half-acc {
     margin-top: 10px;
-    /* position: relative; */
-    /* margin: 2em; */
+
+    @media (min-width: 768px) {
+        max-width: 700px;
+    }
 }
 
-.accordion input {
-    position: absolute;
-    /* left: 0;
-    top: 0; */
-    /* height: 100%; */
-    width: 100%;
-    opacity: 0;
-    visibility: 0;
-}
-
-.accordion .acc-title {
-    background: var(--donkergroen);
+.acc-title {
+    background-color: var(--donkergroen);
     color: white;
     padding: 1em;
-    position: relative;
     border-radius: 15px 15px 0 0;
-}
-
-
-/* Accordion open */
-.accordion label::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f078";
-}
-
-.accordion label {
     cursor: pointer;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
-.accordion div.acc-content {
-    max-height: 0px;
+.acc-content {
+    /* max-height: 0px; */
     overflow: hidden;
-    transition: max-height 0.5s;
     background-color: white;
-}
-
-.accordion div.acc-content p {
     padding: 2em;
-}
-
-/* Accordion dicht */
-.accordion input:checked~.acc-title label::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f054";
-}
-
-.accordion input:checked~.acc-title~div.acc-content {
-    max-height: 100vh;
     border-radius: 0 0 15px 15px;
 }
-
-.accordion a {
-    color: var(--groen);
-}
-
 
 /* SLIDER */
 .slider {

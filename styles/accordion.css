@@ -1,0 +1,64 @@
+div.accordion {
+    margin-top: 10px;
+    /* position: relative; */
+    /* margin: 2em; */
+}
+
+.accordion input {
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    /* height: 100%; */
+    width: 100%;
+    opacity: 0;
+    visibility: 0;
+}
+
+.accordion .acc-title {
+    background: var(--donkergroen);
+    color: white;
+    padding: 1em;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* Accordion open */
+.accordion label::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+}
+
+.accordion label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.accordion div.acc-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background-color: white;
+}
+
+.accordion div.acc-content p {
+    padding: 2em;
+}
+
+/* Accordion dicht */
+.accordion input:checked~.acc-title label::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+}
+
+.accordion input:checked~.acc-title~div.acc-content {
+    max-height: 100vh;
+    border-radius: 0 0 15px 15px;
+}
+
+.accordion a {
+    color: var(--groen);
+}
