@@ -92,6 +92,10 @@ strong {
     font-weight: bold;
 }
 
+a:hover {
+    color: #cccccc;
+    transition: 0.2s;
+}
 
 .subtitle {
     border: 1px solid var(--oranje);
@@ -147,6 +151,8 @@ header {
     flex-direction: row;
     gap: 1.5em;
     align-items: center;
+
+
 }
 
 
@@ -268,6 +274,10 @@ header {
 .navigation {
     display: none;
 
+    a {
+        font-weight: 600;
+    }
+
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
@@ -280,9 +290,14 @@ header {
         a {
             text-decoration: none;
             color: black;
+            font-size: 18px;
         }
 
     }
+}
+
+.navigation a:hover {
+    color: var(--groen);
 }
 
 
@@ -300,6 +315,12 @@ header {
     border-radius: 7px;
     font-size: 14px;
     width: fit-content;
+
+}
+
+.btn-primair:hover {
+    background-color: var(--donkergroen);
+    transition: 0.3s;
 }
 
 .btn-primair-small {
@@ -312,6 +333,11 @@ header {
     font-weight: 400;
     border-radius: 7px;
     font-size: 12px;
+}
+
+.btn-primair-small:hover {
+    background-color: var(--donkergroen);
+    transition: 0.3s;
 }
 
 .btn-tertiair {
