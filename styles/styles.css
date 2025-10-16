@@ -32,6 +32,14 @@ body {
     }
 }
 
+.hideonmobile {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
 
 .hero {
     background-image: url("../assets/hero-bg.jpg");
@@ -208,7 +216,7 @@ header {
 }
 
 
-#nav-search {
+.nav-search {
     padding: 13px;
     border-radius: 25px;
     border: none;
@@ -216,11 +224,11 @@ header {
     color: white;
 }
 
-#nav-search::placeholder {
+.nav-search::placeholder {
     color: white;
 }
 
-#nav-search::before {
+.nav-search::before {
     font-family: "Font Awesome 5 Free";
     content: "\f002";
 }
