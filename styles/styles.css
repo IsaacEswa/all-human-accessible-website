@@ -471,25 +471,51 @@ header {
     border-radius: 0 0 15px 15px;
 }
 
-/* SLIDER */
-.slider {
-    height: 210px;
-    margin: auto;
+/* BEGIN SLIDER */
+.logos {
     overflow: hidden;
+    padding: 40px 0;
+    /* background: transparent; */
+    white-space: nowrap;
     position: relative;
-    width: auto;
 }
 
-.slider .slide-track {
-    animation: scroll var(--animationSpeed) linear infinite;
-    display: flex;
-    width: calc(250px * 14);
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    content: "";
+    z-index: 2;
 }
 
-.slider .slide {
-    height: 100px;
-    width: 250px;
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #FAF9F6);
 }
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #FAF9F6);
+}
+
+/* .logos:hover .logos-slide {
+    animation-play-state: paused;
+} */
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+    mix-blend-mode: multiply;
+}
+
+.logos-slide img {
+    height: 60px;
+    margin: 0 40px;
+}
+
+/* EINDE SLIDER */
 
 footer {
     display: flex;
@@ -554,6 +580,17 @@ footer .menu li {
         transform: translateX(calc(-250px * 7));
     }
 }
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 
 
 /* -------------------- OVER ONS PAGINA -------------------- */
