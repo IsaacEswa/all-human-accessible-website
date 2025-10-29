@@ -496,6 +496,7 @@ header {
     z-index: 2;
 }
 
+/* Transparante overlay aan de zijkanten van de slider zodat de logo's erin verdwijnen */
 .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), #FAF9F6);
@@ -575,6 +576,8 @@ footer .menu li {
 
 
 @keyframes slide {
+
+    /* Logo's bewegen horizontaal */
     from {
         transform: translateX(0);
     }
