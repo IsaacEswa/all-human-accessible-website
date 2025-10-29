@@ -105,7 +105,8 @@ strong {
     font-weight: bold;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #cccccc;
     transition: 0.2s;
 }
@@ -309,7 +310,8 @@ header {
     }
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation a:focus {
     color: var(--groen);
 }
 
@@ -331,7 +333,8 @@ header {
 
 }
 
-.btn-primair:hover {
+.btn-primair:hover,
+.btn-primair:focus {
     background-color: var(--donkergroen);
     transition: 0.3s;
 }
@@ -348,7 +351,8 @@ header {
     font-size: 12px;
 }
 
-.btn-primair-small:hover {
+.btn-primair-small:hover,
+.btn-primair-small:focus {
     background-color: var(--donkergroen);
     transition: 0.3s;
 }
@@ -371,7 +375,8 @@ header {
     color: var(--donkergroen);
 }
 
-.btn-tertiair a:hover {
+.btn-tertiair a:hover,
+.btn-primair-small:focus {
     color: var(--groen);
 }
 
@@ -449,6 +454,7 @@ header {
 
 .ft-half-acc {
     margin-top: 10px;
+    transition: height 3s ease-in;
 
     @media (min-width: 768px) {
         max-width: 700px;
@@ -500,10 +506,6 @@ header {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #FAF9F6);
 }
 
-/* .logos:hover .logos-slide {
-    animation-play-state: paused;
-} */
-
 .logos-slide {
     display: inline-block;
     animation: 35s slide infinite linear;
@@ -524,7 +526,7 @@ footer {
     padding: 60px 15px;
     gap: 45px;
 
-    h4 {
+    h2 {
         font-family: Inter;
         font-weight: 600;
         font-size: 18px;
@@ -642,7 +644,8 @@ footer .menu li {
     display: flex;
 }
 
-.bestuur-mail:hover {
+.bestuur-mail:hover,
+.bestuur-mail:focus {
     background-color: var(--groen);
     transition: 0.2s;
 }
