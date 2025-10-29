@@ -417,6 +417,7 @@ header {
 
     @media (min-width: 768px) {
         width: 30%;
+        height: 30em;
     }
 }
 
