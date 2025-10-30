@@ -603,11 +603,11 @@ footer .menu li {
 
     }
 
-    @media (min-width: 1024px) {
+    /* @media (min-width: 1024px) {
         grid-template-columns: 1fr 1fr 1fr;
-    }
+    } */
 
-    @media (min-width: 1350px) {
+    @media (min-width: 1200px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
