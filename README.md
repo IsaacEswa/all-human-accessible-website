@@ -17,6 +17,14 @@ De instructie van deze leertaak staat in [INSTRUCTIONS](https://github.com/fdnd-
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+Bekijk hier de website die ik gemaakt heb: https://isaaceswa.github.io/all-human-accessible-website/
+<br>en de over ons pagina: https://isaaceswa.github.io/all-human-accessible-website/over-ons.html
+<br>
+Ik heb de groene kleur van het logo aangehouden als primaire kleur, en een donkere kleur gebruikt als secundaire kleur (bijv. voor hover). De oranje kleur in het logo heeft weinig contrast met wit, dus ik heb die kleur ook iets donkerder gemaakt en die gebruikt voor de subtitels. Op de huidige website van AdConnect wordt er best weinig gebruik gemaakt van afbeelding en vooral tekst. Ik heb afbeeldingen in de featured halfves gezet zodat de gebruiker nog een beetje interesse blijft hebben. Bij een website met alleen maar tekst haakt de gebruiker snel af. 
+
+Ik heb ook een toegankelijkheid test uitgevoerd op de website en dit is de score: <br>
+<img width="595" height="286" alt="image" src="https://github.com/user-attachments/assets/13117d09-50c1-41ee-b786-781707b89780" />
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
