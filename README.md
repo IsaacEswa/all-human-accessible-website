@@ -2,6 +2,8 @@
 
 Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.
 
+De opdracht is om de bestaande website van AdConnect (https://deassociatedegree.nl/) te verbeteren in uitstraling, navigatie en toegankelijkheid. Het doel is dan ook om de website toegankelijk te maken voor iedereen, met of zonder beperking en daarbij is het ook belangrijk dat de nieuwe vormgeving iedereen aanspreekt en te gebruiken blijft.
+
 De instructie van deze leertaak staat in [INSTRUCTIONS](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/INSTRUCTIONS.md)
 
 ## Inhoudsopgave
