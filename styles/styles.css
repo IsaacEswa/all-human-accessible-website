@@ -59,13 +59,13 @@ body {
     }
 
     @media (min-width: 1024px) {
-        padding: 100px 50px 180px;
+        padding: 100px 50px 120px;
     }
 }
 
 .hero * {
     @media (min-width: 768px) {
-        max-width: 60%;
+        max-width: 40%;
     }
 }
 
@@ -211,7 +211,7 @@ header {
 
 .featured-half-content {
     @media (min-width: 768px) {
-        max-width: 50%;
+        max-width: 40%;
     }
 }
 
