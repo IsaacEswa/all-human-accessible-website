@@ -39,7 +39,13 @@ Op de over ons pagina heb ik gebruik gemaakt van Grid om de bestuursleden naast 
 
 <img width="940" height="659" alt="image" src="https://github.com/user-attachments/assets/97e73441-2d12-4339-b71c-32ae987fc37c" />
 
+Zie hier CSS: https://github.com/IsaacEswa/all-human-accessible-website/blob/main/styles/styles.css#L593-L613
 
+Ook heb ik gebruik gemaakt van global styling zodat ik gemakkelijk en snel iets kan aanpassen als dat nodig is:
+https://github.com/IsaacEswa/all-human-accessible-website/blob/main/styles/styles.css#L1-L16
+
+Ik heb classes aangemaakt die ik op elementen kan zetten om deze te verstoppen op desktop en/of mobiel:
+https://github.com/IsaacEswa/all-human-accessible-website/blob/main/styles/styles.css#L27-L41
 
 
 ## Bronnen
