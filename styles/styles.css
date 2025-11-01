@@ -52,7 +52,7 @@ body {
     gap: 20px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
 
     @media (min-width: 768px) {
         padding: 70px 50px 150px;
@@ -631,8 +631,22 @@ footer .menu li {
     background: white;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 0px 5px 20px rgba(22, 92, 72, 0.2);
+    box-shadow: 0px 5px 15px rgba(22, 92, 72, 0.1);
+    height: 100%;
+    transition: 0.3s;
 }
+
+.bestuur-card:hover {
+
+    @media (min-width: 768px) {
+        transform: translateY(-15px);
+        box-shadow: 0px 5px 20px rgba(22, 92, 72, 0.3);
+
+    }
+
+}
+
+
 
 .bestuur-image-area img {
     width: 100%;
