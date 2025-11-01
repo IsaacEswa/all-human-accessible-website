@@ -509,7 +509,7 @@ header {
 
 .logos-slide {
     display: inline-block;
-    animation: 35s slide infinite linear;
+    animation: 60s slide infinite linear;
     mix-blend-mode: multiply;
 }
 
