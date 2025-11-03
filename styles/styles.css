@@ -230,9 +230,25 @@ header {
 }
 
 .featured-half-img-container {
+    position: relative;
+
+    img {
+        border-radius: 15px;
+    }
+
     @media (min-width: 768px) {
         width: 100%;
     }
+}
+
+.top-img {
+    width: 30% !important;
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+    bottom: 20%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 
