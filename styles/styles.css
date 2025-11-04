@@ -69,7 +69,7 @@ body {
 }
 
 .hero * {
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
         max-width: 45%;
     }
 }
@@ -177,8 +177,13 @@ header {
 .menu {
     display: flex;
     flex-direction: row;
-    gap: 1.5em;
+    gap: 0.7em;
     align-items: center;
+
+
+    /* @media (min-width: 768px) and (max-width: 1024px) {
+        flex-wrap: wrap;
+    } */
 }
 
 
@@ -208,7 +213,7 @@ header {
 }
 
 .featured-half {
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         flex-direction: row;
         gap: 5%;
         display: flex;
@@ -216,7 +221,7 @@ header {
 }
 
 .featured-half-rev {
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         flex-direction: row-reverse;
         gap: 5%;
         display: flex;
@@ -224,7 +229,7 @@ header {
 }
 
 .featured-half-content {
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         max-width: 40%;
     }
 }
@@ -296,8 +301,8 @@ header {
 .logo-primair {
     display: none;
 
-    @media (min-width: 768px) {
-        max-width: 30%;
+    @media (min-width: 1024px) {
+        max-width: 20%;
         object-fit: contain;
         display: block;
     }
@@ -310,7 +315,7 @@ header {
     display: block;
     object-fit: contain;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         display: none;
     }
 }
@@ -334,10 +339,20 @@ header {
         a {
             text-decoration: none;
             color: black;
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            a {
+                font-size: 18px;
+            }
         }
 
     }
+
+    /* @media (min-width: 1024px) {
+        gap: 2em;
+    } */
 }
 
 .navigation a:hover,
@@ -429,10 +444,16 @@ header {
 }
 
 .nieuws-cards {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 35px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .nieuws-card {
@@ -452,7 +473,7 @@ header {
     }
 
     @media (min-width: 768px) {
-        width: 30%;
+        width: 100%;
         height: 30em;
 
     }
